@@ -1,10 +1,13 @@
 {
-  "name": "electron-quick-start",
+  "name": "package-jar-exe",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "package springboot jar to exe",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . construction --win --out build --arch=x64 --version1.0.0 --overwrite --icon=static/images/128.ico",
+    "dist": "electron-builder --win --x64",
+    "win32": "electron-builder --win --ia32"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -18,5 +21,24 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^14.0.0"
-  }
+  },
+  "build": {
+    "appId": "com.phil.buildjavawebtoexe",
+    "copyright": "https://github.com/phil-cheng",
+    "productName": "java打包",
+    "asar": false,
+    "mac": {
+        "target": [
+            "dmg",
+            "zip"
+        ]
+    },
+    "win": {
+        "target": [
+            "nsis",
+            "zip"
+        ],
+        "icon": "static/images/256.ico"
+    }
+}
 }

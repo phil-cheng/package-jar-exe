@@ -2,17 +2,32 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="">
+    <title>index</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
+    <!-- We are using Node.js <span id="node-version"></span>,
     Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    and Electron <span id="electron-version"></span>. -->
+   
+    <script src="./static/js/jquery.min.js"> </script>
+    <script>
+      $(document).ready(function(){
+        $.ajax({
+          timeout: 200,
+          type: 'GET',
+          url: 'http://localhost',
+          data: {
+          },
+          success: function(obj){
+            window.location.href = "http://localhost"
+          },
+          error: function(obj){
+            window.location.href = "loading.html";
+          }
+        })
+      })
+      
+    </script>
   </body>
 </html>

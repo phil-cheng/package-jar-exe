@@ -1,0 +1,135 @@
+Application Version: 4.6.2
+Spring Boot Version: 2.2.13.RELEASE
+////////////////////////////////////////////////////////////////////
+//                          _ooOoo_                               //
+//                         o8888888o                              //
+//                         88" . "88                              //
+//                         (| ^_^ |)                              //
+//                         O\  =  /O                              //
+//                      ____/`---'\____                           //
+//                    .'  \\|     |//  `.                         //
+//                   /  \\|||  :  |||//  \                        //
+//                  /  _||||| -:- |||||-  \                       //
+//                  |   | \\\  -  /// |   |                       //
+//                  | \_|  ''\---/''  |   |                       //
+//                  \  .-\__  `-`  ___/-. /                       //
+//                ___`. .'  /--.--\  `. . ___                     //
+//              ."" '<  `.___\_<|>_/___.'  >'"".                  //
+//            | | :  `- \`.;`\ _ /`;.`/ - ` : | |                 //
+//            \  \ `-.   \_ __\ /__ _/   .-` /  /                 //
+//      ========`-.____`-.___\_____/___.-`____.-'========         //
+//                           `=---='                              //
+//      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
+//             佛祖保佑       永不宕机      永无BUG               //
+////////////////////////////////////////////////////////////////////
+21:26:21.322 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.0.22.Final
+21:26:21.355 [main] INFO  c.r.RuoYiApplication - [logStarting,55] - Starting RuoYiApplication on DESKTOP-ETEPCD2 with PID 15156 (D:\construction\electron-quick-start\app\ruoyi-admin.jar started by phil in D:\construction\electron-quick-start)
+21:26:21.356 [main] DEBUG c.r.RuoYiApplication - [logStarting,56] - Running with Spring Boot v2.2.13.RELEASE, Spring v5.2.12.RELEASE
+21:26:21.356 [main] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,655] - The following profiles are active: druid
+21:26:23.973 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-authCache]
+21:26:24.945 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [loginRecordCache]
+21:26:25.451 [main] INFO  c.a.d.p.DruidDataSource - [init,990] - {dataSource-1} inited
+21:26:25.462 [main] DEBUG c.r.s.m.S.selectConfigList - [debug,137] - ==>  Preparing: select config_id, config_name, config_key, config_value, config_type, create_by, create_time, update_by, update_time, remark from sys_config
+21:26:25.721 [main] DEBUG c.r.s.m.S.selectConfigList - [debug,137] - ==> Parameters: 
+21:26:25.755 [main] DEBUG c.r.s.m.S.selectConfigList - [debug,137] - <==      Total: 9
+21:26:25.760 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.765 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.766 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.767 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.768 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.768 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.769 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.770 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:25.771 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-config]
+21:26:26.397 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-userCache]
+21:26:26.950 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-80"]
+21:26:26.951 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+21:26:26.951 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+21:26:27.040 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+21:26:27.336 [main] DEBUG c.r.s.m.S.selectDictTypeAll - [debug,137] - ==>  Preparing: select dict_id, dict_name, dict_type, status, create_by, create_time, remark from sys_dict_type
+21:26:27.337 [main] DEBUG c.r.s.m.S.selectDictTypeAll - [debug,137] - ==> Parameters: 
+21:26:27.341 [main] DEBUG c.r.s.m.S.selectDictTypeAll - [debug,137] - <==      Total: 10
+21:26:27.342 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.357 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_user_sex(String)
+21:26:27.359 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 3
+21:26:27.360 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.360 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.361 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_show_hide(String)
+21:26:27.364 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.365 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.366 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.367 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_normal_disable(String)
+21:26:27.369 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.370 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.371 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.372 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_job_status(String)
+21:26:27.374 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.375 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.375 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.376 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_job_group(String)
+21:26:27.378 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.379 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.380 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.381 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_yes_no(String)
+21:26:27.383 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.383 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.384 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.385 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_notice_type(String)
+21:26:27.386 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.387 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.388 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.388 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_notice_status(String)
+21:26:27.392 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.393 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.393 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.394 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_oper_type(String)
+21:26:27.398 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 10
+21:26:27.398 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.399 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==>  Preparing: select dict_code, dict_sort, dict_label, dict_value, dict_type, css_class, list_class, is_default, status, create_by, create_time, remark from sys_dict_data where status = '0' and dict_type = ? order by dict_sort asc
+21:26:27.400 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - ==> Parameters: sys_common_status(String)
+21:26:27.403 [main] DEBUG c.r.s.m.S.selectDictDataByType - [debug,137] - <==      Total: 2
+21:26:27.403 [main] INFO  o.a.s.c.e.EhCacheManager - [getCache,169] - Using existing EHCache named [sys-dict]
+21:26:27.609 [main] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+21:26:27.630 [main] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:26:27.631 [main] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+21:26:27.640 [main] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'RuoyiScheduler' with instanceId 'DESKTOP-ETEPCD21631021187612'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+21:26:27.640 [main] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+21:26:27.640 [main] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+21:26:27.644 [main] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@76a2ddf3
+21:26:27.957 [main] DEBUG c.r.q.m.S.selectJobAll - [debug,137] - ==>  Preparing: select job_id, job_name, job_group, invoke_target, cron_expression, misfire_policy, concurrent, status, create_by, create_time, remark from sys_job
+21:26:27.957 [main] DEBUG c.r.q.m.S.selectJobAll - [debug,137] - ==> Parameters: 
+21:26:27.959 [main] DEBUG c.r.q.m.S.selectJobAll - [debug,137] - <==      Total: 3
+21:26:29.997 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - [modelSpecification,170] - Unable to interpret the implicit parameter configuration with dataType: int, dataTypeClass: class java.lang.Void
+21:26:30.052 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - [modelSpecification,170] - Unable to interpret the implicit parameter configuration with dataType: int, dataTypeClass: class java.lang.Void
+21:26:30.085 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - [modelSpecification,170] - Unable to interpret the implicit parameter configuration with dataType: Integer, dataTypeClass: class java.lang.Void
+21:26:30.087 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - [modelSpecification,170] - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+21:26:30.089 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - [modelSpecification,170] - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+21:26:30.091 [main] WARN  s.d.s.r.o.OperationImplicitParameterReader - [modelSpecification,170] - Unable to interpret the implicit parameter configuration with dataType: String, dataTypeClass: class java.lang.Void
+21:26:30.173 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-80"]
+21:26:30.222 [main] INFO  c.r.RuoYiApplication - [logStarted,61] - Started RuoYiApplication in 9.355 seconds (JVM running for 9.982)
+(????)??  若依启动成功   ?(??`?)?  
+ .-------.       ____     __        
+ |  _ _   \      \   \   /  /    
+ | ( ' )  |       \  _. /  '       
+ |(_ o _) /        _( )_ .'         
+ | (_,_).' __  ___(_ o _)'          
+ |  |\ \  |  ||   |(_,_)'         
+ |  | \ `'   /|   `-'  /           
+ |  |  \    /  \      /           
+ ''-'   `'-'    `-..-'              
+21:26:31.189 [Quartz Scheduler [RuoyiScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler RuoyiScheduler_$_DESKTOP-ETEPCD21631021187612 started.
+21:27:00.388 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler RuoyiScheduler_$_DESKTOP-ETEPCD21631021187612 paused.
+21:27:00.392 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler RuoyiScheduler_$_DESKTOP-ETEPCD21631021187612 shutting down.
+21:27:00.392 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler RuoyiScheduler_$_DESKTOP-ETEPCD21631021187612 paused.
+21:27:00.394 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler RuoyiScheduler_$_DESKTOP-ETEPCD21631021187612 shutdown complete.
+21:27:00.394 [SpringContextShutdownHook] INFO  sys-user - [shutdownAsyncManager,62] - ====关闭后台任务任务线程池====
+21:27:00.397 [SpringContextShutdownHook] INFO  sys-user - [shutdownEhCacheManager,75] - ====关闭缓存====
+21:27:00.429 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2043] - {dataSource-1} closing ...
+21:27:00.440 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2116] - {dataSource-1} closed
