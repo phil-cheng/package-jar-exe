@@ -20,7 +20,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^14.0.0"
+    "electron": "^33.2.1"
   },
   "build": {
     "appId": "com.phil.buildjavawebtoexe",
